@@ -1,0 +1,31 @@
+##########################################################
+#########          Config File for WTP          ##########
+##  Lines begin with # and blank lines will be ignored  ##
+##########################################################
+
+# List of ACs' addresses for Discovery. They can be host names (e.g. "localhost",
+<AC_ADDRESSES>
+127.0.0.1
+
+</AC_ADDRESSES>
+
+</WTP_NAME>RTKCWAP_1
+
+</WTP_LOCATION>  Next to Fridge
+
+# Can be IPv4 or IPv6.
+</WTP_LEV3_PROTOCOL> IPv4
+
+</WTP_FORCE_MTU> 1420
+
+# Force AC Address to jump to Join without Discovery
+# </WTP_FORCE_AC_ADDRESS> 192.168.1.2
+
+# Force security without Discovery when jump to Join without Discovery
+# It can be X509_CERTIFICATE or PRESHARED
+# </WTP_FORCE_SECURITY> X509_CERTIFICATE
+
+</WTP_LOG_FILE_ENABLE> 1
+
+</WTP_LOG_FILE_SIZE> 100000
+

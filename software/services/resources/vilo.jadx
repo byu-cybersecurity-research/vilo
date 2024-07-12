@@ -1,0 +1,1426 @@
+{
+  "projectVersion": 1,
+  "files": [
+    "Vilo_1.0.180_apkcombo.com.apk"
+  ],
+  "treeExpansions": [
+    [
+      "com",
+      "Source code",
+      "Vilo_1.0.180_apkcombo.com.apk"
+    ],
+    [
+      "viloliving",
+      "com",
+      "Source code",
+      "Vilo_1.0.180_apkcombo.com.apk"
+    ],
+    [
+      "setup",
+      "viloliving",
+      "com",
+      "Source code",
+      "Vilo_1.0.180_apkcombo.com.apk"
+    ],
+    [
+      "install.mesh",
+      "setup",
+      "viloliving",
+      "com",
+      "Source code",
+      "Vilo_1.0.180_apkcombo.com.apk"
+    ],
+    [
+      "install",
+      "install.mesh",
+      "setup",
+      "viloliving",
+      "com",
+      "Source code",
+      "Vilo_1.0.180_apkcombo.com.apk"
+    ],
+    [
+      "utils",
+      "install.mesh",
+      "setup",
+      "viloliving",
+      "com",
+      "Source code",
+      "Vilo_1.0.180_apkcombo.com.apk"
+    ],
+    [
+      "entity",
+      "install",
+      "install.mesh",
+      "setup",
+      "viloliving",
+      "com",
+      "Source code",
+      "Vilo_1.0.180_apkcombo.com.apk"
+    ],
+    [
+      "base",
+      "install",
+      "install.mesh",
+      "setup",
+      "viloliving",
+      "com",
+      "Source code",
+      "Vilo_1.0.180_apkcombo.com.apk"
+    ],
+    [
+      "utils",
+      "setup",
+      "viloliving",
+      "com",
+      "Source code",
+      "Vilo_1.0.180_apkcombo.com.apk"
+    ]
+  ],
+  "codeData": {
+    "comments": [
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "b:Lcom/viloliving/setup/install/mesh/install/Utils$ConnectStatus;"
+        },
+        "comment": "8 - not connected?"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.api.utils.XXTEA",
+          "shortId": "b([B[B)[B"
+        },
+        "comment": "switches from array to ByteBuffer (no change to contents)"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.AgreementUtil",
+          "shortId": "\u003cclinit\u003e()V"
+        },
+        "comment": "HLandrUS1"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "c([B)I"
+        },
+        "comment": "turns b\"\\x12\\x34\" into 0x3412"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "d([BZ)Ljava/lang/String;"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 14
+        },
+        "comment": "turns \"\\x99\" to \"99\""
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "h()Z"
+        },
+        "comment": "6 - connecting\n7 - connected"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "i(Ljava/lang/String;ILandroid/os/Handler;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 108
+        },
+        "comment": "7 \u003d connected? 6 \u003d connecting?"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "r(I[B)[B"
+        },
+        "comment": "If the length is 15 bytes or less, it returns an empty byte array. Otherwise, it returns a new byte array containing a portion of the input byte array starting from the 16th byte (index 15) onward."
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "x()V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 4
+        },
+        "comment": "tcp disconnected"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "x()V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 25
+        },
+        "comment": "tcp disconnected 2"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "x()V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 39
+        },
+        "comment": "tcp disconnected 3"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 126
+        },
+        "comment": "disconnect"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 180
+        },
+        "comment": "failed to create connection"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 221
+        },
+        "comment": "connection created successfully"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "comment": "handles incoming TCP messages"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 233
+        },
+        "comment": "if \"what\" \u003d\u003d 2, then successful!"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 260
+        },
+        "comment": "information"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 285
+        },
+        "comment": "message length"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 328
+        },
+        "comment": "opcode"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 375
+        },
+        "comment": "decoding result"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 390
+        },
+        "comment": "failed to send\nif \"what\" \u003d\u003d 1, failed to send"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 405
+        },
+        "comment": "sent successfully"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+          "shortId": "B(I[B)V"
+        },
+        "comment": "handle message?"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+          "shortId": "B(I[B)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 50
+        },
+        "comment": "who knows"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+          "shortId": "B(I[B)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 70
+        },
+        "comment": "reads json from message, parses json, turns json into RouterInfoEntity class"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+          "shortId": "J(ILcom/viloliving/setup/install/mesh/install/entity/RouterInfoEntity;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 50
+        },
+        "comment": "Already bound, enter the reset interface"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+          "shortId": "J(ILcom/viloliving/setup/install/mesh/install/entity/RouterInfoEntity;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 102
+        },
+        "comment": "\"There is an external network and it is not bound. Go to the page to be bound.\""
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+          "shortId": "J(ILcom/viloliving/setup/install/mesh/install/entity/RouterInfoEntity;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 153
+        },
+        "comment": "\"No external network, the Internet access method is PPPoE, go in linkWifiFragment\""
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.vilo.home.fcm.FCMService",
+          "shortId": "a()V"
+        },
+        "comment": "creates a channel for Vilo notifications to be delivered"
+      }
+    ],
+    "renames": [
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.common.manager.MMKVManager",
+          "shortId": "c:Lcom/viloliving/common/manager/MMKVManager;"
+        },
+        "newName": "managerInstance"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.common.utils.PasswordUtil",
+          "shortId": "a:Ljava/util/ArrayList;"
+        },
+        "newName": "uppercase"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.common.utils.PasswordUtil",
+          "shortId": "b:Ljava/util/ArrayList;"
+        },
+        "newName": "lowercase"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.common.utils.PasswordUtil",
+          "shortId": "c:Ljava/util/ArrayList;"
+        },
+        "newName": "digits"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.common.utils.PasswordUtil",
+          "shortId": "d:Ljava/util/ArrayList;"
+        },
+        "newName": "symbols"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.MeshRouterBindActivity",
+          "shortId": "m:[B"
+        },
+        "newName": "something"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.MeshRouterBindActivity",
+          "shortId": "n:[B"
+        },
+        "newName": "key"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "a:I"
+        },
+        "newName": "tries"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "b:Lcom/viloliving/setup/install/mesh/install/Utils$ConnectStatus;"
+        },
+        "newName": "connectstatus"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "c:Ljava/util/concurrent/ExecutorService;"
+        },
+        "newName": "threadPool"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "d:Landroid/os/Handler;"
+        },
+        "newName": "handler_"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "e:Ljava/io/OutputStream;"
+        },
+        "newName": "output_stream"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "f:Ljava/net/Socket;"
+        },
+        "newName": "my_socket"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils$ConnectStatus",
+          "shortId": "a:I"
+        },
+        "newName": "connect_status"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "f:Ljava/lang/String;"
+        },
+        "newName": "logname"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "w:Ljava/util/List;"
+        },
+        "newName": "ip_array"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "x:Lcom/api/CloudAPI/ControlHandler;"
+        },
+        "newName": "controlhandler"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.ReadyFragment",
+          "shortId": "p:Ljava/lang/String;"
+        },
+        "newName": "ssid"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.ReadyFragment",
+          "shortId": "s:Ljava/lang/String;"
+        },
+        "newName": "psk"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.api.utils.ByteOperator",
+          "shortId": "a([B)[B"
+        },
+        "newName": "deobfuscate"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.api.utils.ByteOperator",
+          "shortId": "a([B)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 1
+        },
+        "newName": "retval"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.api.utils.XXTEA",
+          "shortId": "a(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131072
+        },
+        "newName": "payload"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.api.utils.XXTEA",
+          "shortId": "a(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 196608
+        },
+        "newName": "key"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.api.utils.XXTEA",
+          "shortId": "b([B[B)[B"
+        },
+        "newName": "custom_xxtea_encrypt"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.api.utils.XXTEA",
+          "shortId": "b([B[B)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 0
+        },
+        "newName": "payload"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.api.utils.XXTEA",
+          "shortId": "b([B[B)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65536
+        },
+        "newName": "key"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.api.utils.XXTEA",
+          "shortId": "c(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65536
+        },
+        "newName": "payload"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.api.utils.XXTEA",
+          "shortId": "c(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131072
+        },
+        "newName": "key"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.api.utils.XXTEA",
+          "shortId": "d(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/nio/IntBuffer;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 720896
+        },
+        "newName": "payload"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.api.utils.XXTEA",
+          "shortId": "d(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/nio/IntBuffer;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 786432
+        },
+        "newName": "key"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.hualai.NativeXXTea",
+          "shortId": "a([B[B)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131072
+        },
+        "newName": "payload"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.hualai.NativeXXTea",
+          "shortId": "a([B[B)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 196608
+        },
+        "newName": "key"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.hualai.NativeXXTea",
+          "shortId": "a([B[B)[B"
+        },
+        "newName": "xxtea_decrypt"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.hualai.NativeXXTea",
+          "shortId": "b([B[B)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131072
+        },
+        "newName": "payload"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.hualai.NativeXXTea",
+          "shortId": "b([B[B)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 196608
+        },
+        "newName": "key"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.hualai.NativeXXTea",
+          "shortId": "b([B[B)[B"
+        },
+        "newName": "xxtea_encrypt"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.common.utils.XORUtils",
+          "shortId": "a([B[B)[B"
+        },
+        "newName": "xor_strings"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.AgreementUtil",
+          "shortId": "a(BLjava/lang/String;)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65539
+        },
+        "newName": "header"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.AgreementUtil",
+          "shortId": "a(BLjava/lang/String;)[B"
+        },
+        "newName": "msg_to_bytes"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.AgreementUtil",
+          "shortId": "a(BLjava/lang/String;)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262144
+        },
+        "newName": "opcode"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.AgreementUtil",
+          "shortId": "a(BLjava/lang/String;)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262152
+        },
+        "newName": "actual_payload"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.AgreementUtil",
+          "shortId": "a(BLjava/lang/String;)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 327680
+        },
+        "newName": "message"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.AgreementUtil",
+          "shortId": "a(BLjava/lang/String;)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 327682
+        },
+        "newName": "encoded_msg"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.AgreementUtil",
+          "shortId": "b([B)[B"
+        },
+        "newName": "decode_not_43"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.AgreementUtil",
+          "shortId": "b([B)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65536
+        },
+        "newName": "payload"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.AgreementUtil",
+          "shortId": "c([B)[B"
+        },
+        "newName": "decode2"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.AgreementUtil",
+          "shortId": "c([B)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65536
+        },
+        "newName": "payload"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "c([B)I"
+        },
+        "newName": "bytes_to_int"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "d([BZ)Ljava/lang/String;"
+        },
+        "newName": "bytes_to_hex"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "d([BZ)Ljava/lang/String;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 0
+        },
+        "newName": "decoded_message"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "d([BZ)Ljava/lang/String;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262144
+        },
+        "newName": "b"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "d([BZ)Ljava/lang/String;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 458752
+        },
+        "newName": "information"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "d([BZ)Ljava/lang/String;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 524288
+        },
+        "newName": "space_separated_and_uppercase"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "f(Ljava/lang/String;ILandroid/os/Handler;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 196608
+        },
+        "newName": "IP"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "f(Ljava/lang/String;ILandroid/os/Handler;)V"
+        },
+        "newName": "connect_to_tcp"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "f(Ljava/lang/String;ILandroid/os/Handler;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262144
+        },
+        "newName": "port"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "g()Z"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65539
+        },
+        "newName": "already_connected"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "g()Z"
+        },
+        "newName": "return_already_connected"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "h()Z"
+        },
+        "newName": "return_connecting"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "i(Ljava/lang/String;ILandroid/os/Handler;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262144
+        },
+        "newName": "IP"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "i(Ljava/lang/String;ILandroid/os/Handler;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262151
+        },
+        "newName": "buf"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "i(Ljava/lang/String;ILandroid/os/Handler;)V"
+        },
+        "newName": "connect_to_socket"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils",
+          "shortId": "i(Ljava/lang/String;ILandroid/os/Handler;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 327680
+        },
+        "newName": "port"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils$ConnectStatus",
+          "shortId": "a()I"
+        },
+        "newName": "get_connect_status"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils$ConnectStatus",
+          "shortId": "b(I)V"
+        },
+        "newName": "set_connect_status"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.Utils$ConnectStatus",
+          "shortId": "b(I)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65536
+        },
+        "newName": "status"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "D(BLjava/lang/String;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65536
+        },
+        "newName": "opcode"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "D(BLjava/lang/String;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131072
+        },
+        "newName": "message"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "D(BLjava/lang/String;)V"
+        },
+        "newName": "send_message"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "n()Lcom/api/CloudAPI/ControlHandler;"
+        },
+        "newName": "return_ctrl_handler"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "r(I[B)[B"
+        },
+        "newName": "bytes_after_index_15"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "r(I[B)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131072
+        },
+        "newName": "opcode"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "r(I[B)[B"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 196608
+        },
+        "newName": "message"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "w()V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 2
+        },
+        "newName": "gatewayIP"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "w()V"
+        },
+        "newName": "getGatewayAndConnect"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+          "shortId": "x()V"
+        },
+        "newName": "disconnect"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 4
+        },
+        "newName": "statuscode"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 12
+        },
+        "newName": "a"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 393223
+        },
+        "newName": "f"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel$1",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 393224
+        },
+        "newName": "payload"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+          "shortId": "B(I[B)V"
+        },
+        "newName": "do_something"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+          "shortId": "B(I[B)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 0
+        },
+        "newName": "msg_"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+          "shortId": "B(I[B)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65536
+        },
+        "newName": "logname"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+          "shortId": "B(I[B)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 327680
+        },
+        "newName": "opcode"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+          "shortId": "B(I[B)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 393216
+        },
+        "newName": "msg"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+          "shortId": "J(ILcom/viloliving/setup/install/mesh/install/entity/RouterInfoEntity;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 327680
+        },
+        "newName": "opcode"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.utils.ConnectionWifiUtil",
+          "shortId": "e(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/viloliving/setup/utils/ConnectionWifiUtil$ConnectWifiCallback;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 196608
+        },
+        "newName": "ssid"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.utils.ConnectionWifiUtil",
+          "shortId": "e(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/viloliving/setup/utils/ConnectionWifiUtil$ConnectWifiCallback;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262144
+        },
+        "newName": "psk"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.utils.ConnectionWifiUtil",
+          "shortId": "g(Landroid/net/wifi/WifiManager;Landroid/net/ConnectivityManager;Ljava/lang/String;Ljava/lang/String;Lcom/viloliving/setup/utils/ConnectionWifiUtil$ConnectWifiCallback;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262144
+        },
+        "newName": "ssid"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.utils.ConnectionWifiUtil",
+          "shortId": "g(Landroid/net/wifi/WifiManager;Landroid/net/ConnectivityManager;Ljava/lang/String;Ljava/lang/String;Lcom/viloliving/setup/utils/ConnectionWifiUtil$ConnectWifiCallback;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 327680
+        },
+        "newName": "psk"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.utils.ConnectionWifiUtil",
+          "shortId": "h(Ljava/lang/String;Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 196608
+        },
+        "newName": "ssid"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.utils.ConnectionWifiUtil",
+          "shortId": "h(Ljava/lang/String;Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262144
+        },
+        "newName": "psk"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.viloliving.setup.utils.ConnectionWifiUtil",
+          "shortId": "h(Ljava/lang/String;Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;"
+        },
+        "newName": "set_ssid_and_psk"
+      }
+    ]
+  },
+  "openTabs": [
+    {
+      "type": "class",
+      "tabPath": "com.viloliving.setup.install.mesh.install.base.BaseTcpViewModel",
+      "subPath": "java",
+      "caret": 5211,
+      "view": {
+        "x": 0,
+        "y": 1157
+      }
+    },
+    {
+      "type": "class",
+      "tabPath": "com.viloliving.setup.install.mesh.install.Utils",
+      "subPath": "java",
+      "caret": 3013,
+      "view": {
+        "x": 0,
+        "y": 1040
+      }
+    },
+    {
+      "type": "class",
+      "tabPath": "com.viloliving.setup.install.mesh.install.AgreementUtil",
+      "subPath": "java",
+      "caret": 1841,
+      "view": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "type": "class",
+      "tabPath": "com.viloliving.setup.install.mesh.install.fragment.LinkRouterViewModel",
+      "subPath": "java",
+      "caret": 1796,
+      "view": {
+        "x": 0,
+        "y": 181
+      }
+    },
+    {
+      "type": "class",
+      "tabPath": "com.viloliving.setup.install.mesh.install.MeshRouterBindActivity",
+      "subPath": "java",
+      "caret": 1875,
+      "view": {
+        "x": 0,
+        "y": 485
+      }
+    },
+    {
+      "type": "class",
+      "tabPath": "com.api.utils.XXTEA",
+      "subPath": "java",
+      "caret": 926,
+      "view": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "type": "class",
+      "tabPath": "com.api.utils.ByteOperator",
+      "subPath": "java",
+      "caret": 220,
+      "view": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "activeTab": 2,
+  "cacheDir": "Vilo_1.0.180_apkcombo.com.apk.cache",
+  "enableLiveReload": false,
+  "searchHistory": [
+    "phoneId",
+    "firebaseapp",
+    "google_api_key"
+  ]
+}

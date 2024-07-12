@@ -1,0 +1,85 @@
+GetDeviceInfo
+INPUT ARGUMENTS:
+ - none
+OUTPUT ARGUMENTS:
+ - {'name': 'NewDeviceInfo', 'data_type': 'bin.base64', 'allowed_value_list': []}
+
+PutMessage
+INPUT ARGUMENTS:
+ - {'name': 'NewInMessage', 'data_type': 'bin.base64', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - {'name': 'NewOutMessage', 'data_type': 'bin.base64', 'allowed_value_list': []}
+
+GetAPSettings
+INPUT ARGUMENTS:
+ - {'name': 'NewMessage', 'data_type': 'bin.base64', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - {'name': 'NewAPSettings', 'data_type': 'bin.base64', 'allowed_value_list': []}
+
+SetAPSettings
+INPUT ARGUMENTS:
+ - {'name': 'APSettings', 'data_type': 'bin.base64', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - none
+
+DelAPSettings
+INPUT ARGUMENTS:
+ - {'name': 'NewAPSettings', 'data_type': 'bin.base64', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - none
+
+GetSTASettings
+INPUT ARGUMENTS:
+ - {'name': 'NewMessage', 'data_type': 'bin.base64', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - {'name': 'NewSTASettings', 'data_type': 'bin.base64', 'allowed_value_list': []}
+
+SetSTASettings
+INPUT ARGUMENTS:
+ - {'name': 'NewSTASettings', 'data_type': 'bin.base64', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - none
+
+DelSTASettings
+INPUT ARGUMENTS:
+ - {'name': 'NewSTASettings', 'data_type': 'bin.base64', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - none
+
+PutWLANResponse
+INPUT ARGUMENTS:
+ - {'name': 'NewMessage', 'data_type': 'bin.base64', 'allowed_value_list': []}
+ - {'name': 'NewWLANEventType', 'data_type': 'ui1', 'allowed_value_list': []}
+ - {'name': 'NewWLANEventMAC', 'data_type': 'string', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - none
+
+SetSelectedRegistrar
+INPUT ARGUMENTS:
+ - {'name': 'NewMessage', 'data_type': 'bin.base64', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - none
+
+RebootAP
+INPUT ARGUMENTS:
+ - {'name': 'NewAPSettings', 'data_type': 'bin.base64', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - none
+
+ResetAP
+INPUT ARGUMENTS:
+ - {'name': 'NewMessage', 'data_type': 'bin.base64', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - none
+
+RebootSTA
+INPUT ARGUMENTS:
+ - {'name': 'NewSTASettings', 'data_type': 'bin.base64', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - none
+
+ResetSTA
+INPUT ARGUMENTS:
+ - {'name': 'NewMessage', 'data_type': 'bin.base64', 'allowed_value_list': []}
+OUTPUT ARGUMENTS:
+ - none

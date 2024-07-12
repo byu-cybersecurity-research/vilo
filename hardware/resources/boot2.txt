@@ -1,0 +1,578 @@
+Booting...
+init_ram
+bond:0x0000000b
+MCM 128MB
+
+ dram_init_clk_frequency ,ddr_freq=1066 (Mbps), 533 (MHZ) 
+
+DRAM init disable
+
+DRAM init enable
+
+DRAM init is done , jump to DRAM
+enable DRAM ODT 
+
+SDR init done dev_map=0xb8142000
+
+Detect page_size = 2KB (3)
+
+Detect bank_size = 8 banks(0x00000002)
+
+Detect dram size = 128MB (0x08000000)
+
+DDR init OK
+init ddr ok
+
+DRAM Type: DDR2
+	DRAM frequency: 533MHz
+	DRAM Size: 128MB
+JEDEC id EF4018, EXT id 0x0000
+found w25q128
+flash vendor: Winbond
+read = 05 value: 24 (ret = 0)
+lock_state = 1, lock = 1
+w25q128, size=16MB, erasesize=64KB, max_speed_hz=29000000Hz
+auto_mode=0 addr_width=3 erase_opcode=0x000000d8
+Write PLL1=80c00042
+=>CPU Wake-up interrupt happen! GISR=89000080 
+Reboot Result from Watchdog Timeout!
+
+---Realtek RTL8197F-VG boot code at 2021.04.28-16:49+0800 v3.4.14b_mu (999MHz)
+bootbank is 1, bankmark 80000003, forced:0
+no sys signature at 00010000!
+no sys signature at 00020000!
+no sys signature at 00030000!
+no sys signature at 00040000!
+no rootfs signature at 00260000!
+no rootfs signature at 00270000!
+no rootfs signature at 002B0000!
+no rootfs signature at 00100000!
+no rootfs signature at 00110000!
+no rootfs signature at 00120000!
+no rootfs signature at 00130000!
+no rootfs signature at 00140000!
+no rootfs signature at 00150000!
+no rootfs signature at 00160000!
+no rootfs signature at 00170000!
+no rootfs signature at 00180000!
+no rootfs signature at 00190000!
+no rootfs signature at 001A0000!
+no rootfs signature at 001B0000!
+no rootfs signature at 001C0000!
+no rootfs signature at 001D0000!
+no rootfs signature at 001E0000!
+no rootfs signature at 001F0000!
+no rootfs signature at 00200000!
+no rootfs signature at 00210000!
+no rootfs signature at 00220000!
+no rootfs signature at 00230000!
+no rootfs signature at 00240000!
+no rootfs signature at 00250000!
+no rootfs signature at 00280000!
+no rootfs signature at 00290000!
+no rootfs signature at 002A0000!
+no rootfs signature at 002C0000!
+Jump to image start=0x80a00000...
+return_addr = b0050000 ,boot bank=1, bank_mark=0x80000003...
+decompressing kernel:
+Uncompressing Linux... done, booting the kernel.
+done decompressing kernel.
+start address: 0x8050fca0
+Linux version 3.10.90 (jenkins@SWwubu14) (gcc version 4.4.7 (Realtek MSDK-4.4.7 Build 2001) ) #1 Thu Apr 28 17:42:41 CST 2022
+bootconsole [early0] enabled
+CPU revision is: 00019385 (MIPS 24Kc)
+Determined physical RAM map:
+ memory: 08000000 @ 00000000 (usable)
+Zone ranges:
+  Normal   [mem 0x00000000-0x07ffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x00000000-0x07ffffff]
+Primary instruction cache 64kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 8176
+Kernel command line: console=ttyS0,38400 root=/dev/mtdblock1
+PID hash table entries: 512 (order: -3, 2048 bytes)
+Dentry cache hash table entries: 16384 (order: 2, 65536 bytes)
+Inode-cache hash table entries: 8192 (order: 1, 32768 bytes)
+Writing ErrCtl register=000737f0
+Readback ErrCtl register=000737f0
+Memory: 104448k/131072k available (5206k kernel code, 26624k reserved, 2091k data, 240k init, 0k highmem)
+SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+NR_IRQS:192
+Realtek GPIO IRQ init
+Calibrating delay loop... 666.41 BogoMIPS (lpj=3332096)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 2048
+NET: Registered protocol family 16
+<<<<<Register PCI Controller>>>>>
+Do MDIO_RESET
+40MHz
+Find PCIE Port, Device:Vender ID=f81210ec
+Realtek GPIO controller driver init
+INFO: registering sheipa spi device
+bio: create slab <bio-0> at 0
+INFO: sheipa spi driver register
+INFO: sheipa spi probe
+Switching to clocksource MIPS
+NET: Registered protocol family 2
+TCP established hash table entries: 2048 (order: 0, 16384 bytes)
+TCP bind hash table entries: 2048 (order: -1, 8192 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
+TCP: reno registered
+UDP hash table entries: 1024 (order: 0, 16384 bytes)
+UDP-Lite hash table entries: 1024 (order: 0, 16384 bytes)
+NET: Registered protocol family 1
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+msgmni has been set to 204
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)
+io scheduler noop registered (default)
+Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled
+␔console [ttyS0] enabled, bootconsole disabled) is a 16550A
+console [ttyS0] enabled, bootconsole disabled
+Realtek GPIO Driver for Flash Reload Default
+loop: module loaded
+m25p80 spi0.0: change speed to 15000000Hz, div 7
+JEDEC id EF4018
+m25p80 spi0.0: found w25q128, expected m25p80
+flash vendor: Winbond
+m25p80 spi0.0: w25q128 (16384 Kbytes) (29000000 Hz)
+6 rtkxxpart partitions found on MTD device m25p80
+Creating 6 MTD partitions on "m25p80":
+0x000000000000-0x0000002d0000 : "boot+cfg+linux"
+0x0000002d0000-0x0000006f0000 : "rootfs"
+0x0000006f0000-0x0000009c0000 : "boot+cfg+linux2"
+0x0000009c0000-0x000000de0000 : "rootfs2"
+0x000000de0000-0x000000fe0000 : "plugin"
+0x000000fe0000-0x000001000000 : "cri_mib"
+PPP generic driver version 2.4.2
+NET: Registered protocol family 24
+MPPE/MPPC encryption/compression module registered
+Realtek WLAN driver - version 3.8.0(2017-12-26)(SVN:Unversioned directory)
+Adaptivity function - version 9.7.07
+Do MDIO_RESET
+40MHz
+Find PCIE Port, Device:Vender ID=f81210ec
+rtl8192cd_init_one(15549): vendor_deivce_id(f81210ec) sub(f81210ec)
+
+ found 8812F !!! 
+IS_RTL8812F_SERIES value8 = 14 
+Hardware type = RTL8812FE
+MACHAL_version_init
+11692M
+HALMAC_MAJOR_VER = 1
+HALMAC_PROTOTYPE_VER = 6
+HALMAC_MINOR_VER = 6
+HALMAC_PATCH_VER = 6
+[TRACE]halmac_init_adapter <===
+halmac_init_adapter Succss 
+[MACFM_software_init 297]wifi hal support Mac function = 0x11ff
+
+
+#######################################################
+SKB_BUF_SIZE=4432 MAX_SKB_NUM=1024
+#######################################################
+
+[MACFM_software_init 297]wifi hal support Mac function = 0x11ff
+[MACFM_software_init 297]wifi hal support Mac function = 0x11ff
+[MACFM_software_init 297]wifi hal support Mac function = 0x11ff
+[MACFM_software_init 297]wifi hal support Mac function = 0x11ff
+[MACFM_software_init 297]wifi hal support Mac function = 0x11ff
+MACHAL_version_init
+[MACFM_software_init 297]wifi hal support Mac function = 0x8108
+
+
+#######################################################
+SKB_BUF_SIZE=3032 MAX_SKB_NUM=1024
+#######################################################
+
+[MACFM_software_init 297]wifi hal support Mac function = 0x8108
+[MACFM_software_init 297]wifi hal support Mac function = 0x8108
+[MACFM_software_init 297]wifi hal support Mac function = 0x8108
+[MACFM_software_init 297]wifi hal support Mac function = 0x8108
+[MACFM_software_init 297]wifi hal support Mac function = 0x8108
+u32 classifier
+nf_conntrack version 0.5.0 (1632 buckets, 6528 max)
+nf_conntrack_l2tp version 3.1 loaded
+nf_conntrack_rtsp v0.6.21 loading
+nf_conntrack_ipsec loaded
+nf_nat_ipsec loaded
+nf_nat_rtsp v0.6.21 loading
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP: cubic registered
+NET: Registered protocol family 10
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+sit: IPv6 over IPv4 tunneling driver
+ip6_gre: GRE over IPv6 tunneling driver
+NET: Registered protocol family 17
+l2tp_core: L2TP core driver, V2.0
+8021q: 802.1Q VLAN Support v1.8
+Realtek FastPath:v1.03
+
+Probing RTL819X NIC-kenel stack size order[0]...
+  SoC: 8197FS-VG
+Switch API version: v1.3.11, chip id: 0x6367-0020
+[rtl865x_adjustQueueLen:8656] memory: bb80457c,  value: fc00ff
+[rtl865x_adjustQueueLen:8656] memory: bb804580,  value: fc00ff
+[rtl865x_adjustQueueLen:8656] memory: bb804584,  value: fc00ff
+[rtl865x_adjustQueueLen:8656] memory: bb8045c4,  value: fc00ff
+[rtl865x_adjustQueueLen:8656] memory: bb8045c8,  value: fc00ff
+[rtl865x_adjustQueueLen:8656] memory: bb8045cc,  value: fc00ff
+eth0 added. vid=9 Member port 0x11b...
+eth1 added. vid=8 Member port 0x4...
+[peth0] added, mapping to [eth1]...
+m25p80 spi0.0: change speed to 29000000Hz, div 4
+VFS: Mounted root (squashfs filesystem) readonly on device 31:1.
+Freeing unused kernel memory: 240K (80724000 - 80760000)
+init started: BusyBox v1.13.4 (2022-04-28 17:10:53 CST)
+cp: cannot stat '/etc/avahi-daemon.conf': No such file or directory
+type:3, enable:1, percent1
+******************
+sysconf init gw all 
+***************
+MIB Version update!
+Init Start...
+******************
+sysconf wlanapp kill wlan0 
+***************
+******************
+sysconf wlanapp kill wlan1 
+***************
+open /proc/br_wlanblock: Permission denied
+Init bridge interface...
+device eth0 entered promiscuous mode
+device wlan0 entered promiscuous mode
+chip_version=0x2001,WlanSupportAbility = 0x3
+clock 40MHz
+[TRACE]pre_init_system_cfg_8812f ===>
+[TRACE]set_hw_value_88xx ===>
+[TRACE]set_hw_value_88xx <===
+[TRACE]pre_init_system_cfg_8812f <===
+[TRACE]mac_pwr_switch_pcie_8812f ===>
+[TRACE]pwr = 1
+[TRACE]8812F pwr seq ver = V01
+[TRACE]mac_pwr_switch_pcie_8812f <===
+InitPON OK!!!
+REG_HCI_MIX_CFG = 2b 
+[TRACE]init_system_cfg_8812f ===>
+[TRACE]init_system_cfg_8812f <===
+InitMAC Page0 
+[TRACE]download_firmware_88xx ===>
+[TRACE]halmac h2c ver = f, fw h2c ver = f!!
+[TRACE]=== FW info ===
+[TRACE]ver : 2
+[TRACE]sub-ver : 0
+[TRACE]sub-idx : 0
+[TRACE]build : 2019/10/7 19:39
+[TRACE]Dlfw OK, enable CPU
+[TRACE]0x80=0xC078, cnt=5000
+[TRACE]download_firmware_88xx <===
+>>SetBeaconDownload88XX
+Init Download FW OK 
+[TRACE]cfg_la_mode_88xx ===>
+[TRACE]cfg_la_mode_88xx <===
+[TRACE]init_mac_cfg_88xx ===>
+[TRACE]init_trx_cfg_8812f ===>
+[TRACE]rqpn_parser_88xx done
+[TRACE]pg_num_parser_88xx done
+[TRACE]Set FIFO page
+[TRACE]h2c fs : 1024
+[TRACE]init_trx_cfg_8812f <===
+[TRACE]init_protocol_cfg_8812f ===>
+[TRACE]init_protocol_cfg_8812f <===
+[TRACE]init_edca_cfg_8812f ===>
+[TRACE]init_edca_cfg_8812f <===
+[TRACE]init_wmac_cfg_8812f ===>
+[TRACE]init_low_pwr_8812f ===>
+[TRACE]init_low_pwr_8812f <===
+[TRACE]init_wmac_cfg_8812f <===
+[TRACE]init_mac_cfg_88xx <===
+halmac_init_mac_cfg OK
+halmac_cfg_rx_aggregation OK
+[TRACE]cfg_mac_addr_88xx ===>
+[TRACE]cfg_mac_addr_88xx <===
+halmac_init_mac_cfg OK
+[TRACE]cfg_drv_info_8812f ===>
+[TRACE]drv info = 1
+[TRACE]set_hw_value_8812f ===>
+[TRACE]set_hw_value_88xx ===>
+[TRACE]cfg_rx_ignore_8812f ===>
+[TRACE]cfg_rx_ignore_8812f <===
+[TRACE]set_hw_value_8812f <===
+[TRACE]cfg_drv_info_8812f <===
+[GetHwReg88XX][size PHY_REG_PG_8812Fmp_Type0]
+[GetHwReg88XX][PHY_REG_PG_8812Fmp_Type0]
+start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+[set_8812F_trx_regs] +++ 
+[timer_ready] wlan0 timer started!
+device wlan1 entered promiscuous mode
+chip_version=0x100f,WlanSupportAbility = 0x2
+PrepareRXBD88XX_V1 134 
+test 0x85150c00,0x30,0x5150e80,0x0, 
+test 0x85150c80,0x30,0x5150ec0,0x0, 
+test 0x85150d00,0x30,0x5150f00,0x0, 
+test 0x85150d80,0x30,0x5150f40,0x0, 
+test 0x85150e00,0x30,0x5150f80,0x0, 
+[97F] RFE type 0 PHY paratemters: DEFAULT
+clock 40MHz
+AP-mode enabled...
+RT_OP_MODE_AP...
+[GetHwReg88XX][rtl8197Gfw]
+[GetHwReg88XX][rtl8197Gfw size]
+InitMACTRX OK
+InitMACProtocolHandler OK
+InitMACSchedulerHandler OK
+InitMACWMACHandler OK
+InitMACSysyemCfgHandler OK
+InitMACFunctionHandler OK
+[GetHwReg88XX][PHY_REG_PG_8197Gmp_Type0] size = 0x872 *((pu4Byte)(val))=0 
+[GetHwReg88XX][PHY_REG_PG_8197Gmp_Type0 start ] 8068f2c0 
+start_addr=(0x0), end_addr=(0x10000), buffer_size=(0x10000), smp_number_max=(8192)
+[timer_ready] wlan1 timer started!
+device wlan-msh entered promiscuous mode
+br0: port 4(wlan-msh) entered listening state
+br0: port 4(wlan-msh) entered listening state
+br0: port 3(wlan1) entered listening state
+br0: port 3(wlan1) entered listening state
+br0: port 2(wlan0) entered listening state
+br0: port 2(wlan0) entered listening state
+br0: port 1(eth0) entered listening state
+br0: port 1(eth0) entered listening state
+IPv6: ADDRCONF(NETDEV_UP): br0: link is not ready
+Init Wlan application...
+br0: port 4(wlan-msh) entered learning state
+br0: port 3(wlan1) entered learning state
+br0: port 2(wlan0) entered learning state
+br0: port 1(eth0) entered learning state
+Receive Pathsel daemon pid:1079
+
+WiFi Simple Config v2.20-wps2.0 (2019.08.27-10:35+0000).
+
+Send SIGUSR2 signal from kernel to pathsel
+br0: topology change detected, propagating
+br0: port 4(wlan-msh) entered forwarding state
+br0: topology change detected, propagating
+br0: port 3(wlan1) entered forwarding state
+br0: topology change detected, propagating
+br0: port 2(wlan0) entered forwarding state
+br0: topology change detected, propagating
+br0: port 1(eth0) entered forwarding state
+IPv6: ADDRCONF(NETDEV_CHANGE): br0: link becomes ready
+Register to wlan0
+Register to wlan1
+iwcontrol RegisterPID to (wlan0)
+iwcontrol RegisterPID to (wlan1)
+route: SIOCDELRT: No such process
+IEEE 802.11f (IAPP) using interface br0 (v1.8)
+Init WAN Interface...
++++set_wanipv6+++2404
+Start setting IPv6[IPv6]
+open /proc/sys/net/ipv4/rt_cache_rebuild_count: No such file or directory
+[capwap_app]: mode=75 wlan_disabled=0, /etc/init.d/rcS: line 136: can't create /proc/irq/33/smp_affinity: nonexistent directory
+create_mesh_guest_msg 459: init message queue
+enable 0 interval
+******************
+sysconf conn dhcp eth1 192.168.8.221 255.255.255.0 192.168.8.1 192.168.8.1 
+***************
+update_dns_resolv_file.48 enter update_dns_resolv_file 
+(set_staBssTransCap)line=1005, set normal extended capabilities IE 
+[set_staBssTransCap 1021]STA[183eefc43faf] Support 11v = 1
+rtk_wlan_event_indicate:11720, report wifi link status failed, pid=0,sk=87e67a00
+cs_backup=1
+Init Firewall Rutype:3, enable:0, percent0
+les....
+Startup Ok
+cmd write
+Write memory 0xb800085c dat 0x600000: 0x600000
+rtl83xx_setAsicReg: reg= 1303, data= 0
+rtl83xx_setAsicReg: reg= 13c3, data= 0
+Waiting tty lock 30s...
+rlx-linux login: Waiting tty lock 29s...
+Waiting tty lock 28s...
+Waiting tty lock 27s...
+s_routerAllVersion =5.16.0.209
+
+platformVersion =1.1.1.3237.2
+Thu Apr 28 17:25:128Ԙ␡ ␏@
+hlVersion->5.16.0.209
+chVersion->1.1.1.3237.2
+Waiting tty lock 26s...
+Waiting tty lock 25s...
+platform_restart_wan_check 2285 PID = 1336
+criapp_set_ping_para(ret=0) ping_count=10  ping_loss=20  ping_delay_max=300
+chdeviceservice cannot be found...
+Waiting tty lock 24s...
+-------------------------------
+# Platform: RTL819X
+# Version: 1.0.4
+# Built on Apr 28 2022 at 17:25:07
+-------------------------------
+start prepare
+[FAIL]: prepare-->jr2s_init start
+
+[FAIL]: prepare-->jr2s_init end
+
+start start
+BOX::star mStarted = 0
+jrs_start ......
+lc_dtv_server_start buff=callback=0x404fe8&document_root=/web&httpPort=8058
+start end ret =0
+lc_dtv_server: 
+lc_dtv_server 0x4529e8 version 2.0.7
+
+lc_dtv_server: cb=0x404fe8,param=callback=0x404fe8&document_root=/web&httpPort=8058
+
+jrs_method_regist ..
+jrs_method_regist ...
+Waiting tty lock 23s...
+ init_hlcloud_info  minorVersion  209  serverVersion  2  
+s_routerAllVersion =5.16.0.209
+
+s_routerFwVersion =1.1.1.3237.2
+Thu Apr 28 17:25:125.16.0.209
+ret 0 pwd is iu978#HET6!
+lc_dtv_server: mg server start on 8058
+
+Waiting tty lock 22s...
+device_mode == 3
+miRouterInfo.mac  E8DA00XXXXXX 
+Func:(set_domain:1037) Info-->>
+
+SERVER_ADDR:device-api.kivolabs.com
+
+0000000000000000000000000000000000000000000000000000000000000000
+begin wait
+Waiting tty lock 21s...
+
+set device url:/network/check 
+send MSG:{"mac":"E8DA00XXXXXX","enr":"","product_model":"KIVO_MeshRouter","product_type":"Router","hardware_ver":"1.1.1.3237","firmware_ver":"5.16.0.209"}
+libcri/cri_utils.c_5208 : sys_cmd is iptables -t mangle -N url_filter_chain;		iptables -A FORWARD -t mangle -j CONNMARK --restore-mark;		iptables -A FORWARD -t mangle   -j url_filter_chain;		iptables -A FORWARD -t mangle -j CONNMARK --save-mark
+Waiting tty lock 20s...
+iptables v1.4.4: Couldn't find target `dns_filter'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.4: Couldn't find target `inhibit_filter'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+set device(url:/network/check)
+recv MSG(ret=0):{"code":"1","msg":"Network Check Succeeded ","data":{}}
+iptables v1.4.4: Couldn't find target `internet_timing_filter'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+Waiting tty lock 19s...
+WAN Connected
+Start NTP daemon
+
+IGMP Proxy v1.2 (2022.04.28-09:21+0000).
+
+ntp client success
+capwap is rerunning
+Realtek CW v3.4.11-3.0
+Apr 28 17:42:41 CST
+lost keeplive package 1 
+Waiting tty lock 18s...
+Waiting tty lock 17s...
+INFO list url:/device/v1/router/ntp_resource/get 
+send MSG:{"mac":"E8DA00XXXXXX","product_model":"KIVO_MeshRouter","product_type":"Router","hardware_ver":"1.1.1.3237","firmware_ver":"5.16.0.209","ts":"1708496449129","sc":"53329cd967454e99xxxxxxxxxxxxxxxx","sv":"b6807715a2df4587xxxxxxxxxxxxxxxx"}
+Waiting tty lock 16s...
+Waiting tty lock 15s...
+Func:(get_info_from_hlcoud:1364) Info-->>/device/v1/router/ntp_resource/get recv msg: {"response_id":"291d38036ab14f25xxxxxxxxxxxxxxxx","ts":1708496449440,"code":"1","msg":"success","data":{"ntp_list":["time.windows.com","time.apple.com","clock.nyc.he.net"]}}
+Func:(process_ntp_list:1253) Info-->>parse success!
+ts = 1708496449440
+Func:(process_ntp_list:1289) Info-->>ntp server is ok!
+INFO list url:/device/v1/task_list/get 
+send MSG:{"mac":"E8DA00XXXXXX","product_model":"KIVO_MeshRouter","product_type":"Router","hardware_ver":"1.1.1.3237","firmware_ver":"5.16.0.209","ts":"1708496450480","sc":"53329cd967454e99xxxxxxxxxxxxxxxx","sv":"b6807715a2df4587xxxxxxxxxxxxxxxx"}
+Waiting tty lock 14s...
+Func:(get_info_from_hlcoud:1364) Info-->>/device/v1/task_list/get recv msg: {"response_id":"0406418ac0fe4424xxxxxxxxxxxxxxxx","ts":1708496450920,"code":"1","msg":"success","data":{"task_list":[{"name":"dhcp_update","param_info":"1"}],"plugin_list":[]}}
+Func:(process_task_list:1116) Info-->>parse success!
+ts = 1708496450920
+SIZE: 1
+send msg:{"mac":"E8DA00XXXXXX","enr":"","verify_method":"0","product_model":"KIVO_MeshRouter","product_type":"Router","hardware_ver":"1.1.1.3237","firmware_ver":"5.16.0.209","sc":"53329cd967454e99xxxxxxxxxxxxxxxx","sv":"8eae00531b934947xxxxxxxxxxxxxxxx","ts":"1708496451930"} 
+url:device-api.kivolabs.com/device/v1/authentication/r/get 
+Waiting tty lock 13s...
+recv msg:{"response_id":"94525dbfe1794832xxxxxxxxxxxxxxxx","ts":1708496452227,"code":"1","msg":"success","data":{"random_number":"4f1129e4"}} 
+send msg:{"mac":"E8DA00XXXXXX","enr":"WFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFg=","verify_method":"0","product_model":"KIVO_MeshRouter","product_type":"Router","hardware_ver":"1.1.1.3237","firmware_ver":"5.16.0.209","sc":"53329cd967454e99xxxxxxxxxxxxxxxx","sv":"7332abbc83784b19xxxxxxxxxxxxxxxx","ts":"1708496453232"} 
+url:device-api.kivolabs.com/device/v1/authentication/enr/verify 
+Waiting tty lock 12s...
+Waiting tty lock 11s...
+recv msg:{"response_id":"570771bdccc344e1xxxxxxxxxxxxxxxx","ts":1708496453681,"code":"1","msg":"success","data":{}} 
+Waiting tty lock 10s...
+verify_r_by_hlcloud sucessful
+miio_msg_process_task init!
+flowstatisticFlag =0
+killall: hl_client: no process killed
+start_hl_client successfull!
+
+generate_master_device_info_msg(url:/device/v1/router/mesh/set)
+send MSG:{"mac":"E8DA00XXXXXX","enr":"WFhYWFhYWFhYWFhY","product_model":"KIVO_MeshRouter","product_type":"Router","hardware_ver":"1.1.1.3237","firmware_ver":"5.16.0.209","ip":"192.168.58.1","nick_name":"Vilo_7487","property_list":[{"pid":"P5","pvalue":"0"},{"pid":"P2123","pvalue":"1"},{"pid":"P2129","pvalue":"0"},{"pid":"P2130","pvalue":"0"}],"ts":"1708496455871","sc":"53329cd967454e99xxxxxxxxxxxxxxxx","sv":"b6807715a2df4587xxxxxxxxxxxxxxxx"}
+camera_iotCertGet post Data {"mac":"E8DA00XXXXXX","enr":"WFhYWFhYWFhYWFhY","product_model":"KIVO_MeshRouter","product_type":"Router","hardware_ver":"1.1.1.3237","firmware_ver":"5.16.0.209","sc":"53329cd967454e99xxxxxxxxxxxxxxxx","sv":"81dbd644075042109ea642591768c02f","ts":"1708496455880"} 
+
+
+************** hl_client **************
+
+
+version: 0.8 
+Build time:Jun  8 2022 16:18:46
+*************** hl_client *************
+
+
+init !!! 
+Func:(get_router_poweron_time:86) Info-->>53
+
+set device url:/device/v1/property_list/set 
+send MSG:{"mac":"E8DA00XXXXXX","enr":"WFhYWFhYWFhYWFhY","product_model":"KIVO_MeshRouter","product_type":"Router","hardware_ver":"1.1.1.3237","firmware_ver":"5.16.0.209","property_list":[{"pid":"P2172","pvalue":"M21E48300048686|0","ts":"1708496456297"},{"pid":"P2176","pvalue":"00169/00114139","ts":"1708496456297"},{"pid":"P2181","pvalue":"1708496403297","ts":"1708496456297"}],"ts":"1708496456297","sc":"46f6a32ab0194fa1xxxxxxxxxxxxxxxx"}
+Waiting tty lock 9s...
+generate_master_device_info_msg(url:/device/v1/router/mesh/set)
+recv MSG(ret=0):{"response_id":"f69be00651bd40b3xxxxxxxxxxxxxxxx","ts":1708496456470,"code":"1","msg":"success","data":{}}
+
+Guest wifi state=0
+Waiting tty lock 8s...
+Waiting tty lock 7s...
+recive Data {"response_id":"2ef3729562114668xxxxxxxxxxxxxxxx","ts":1708496457842,"code":"1","msg":"success","data":{"client_username":"","client_password":"","client_id":"E8DA00XXXXXX","keep_alive":300,"thing_name":"E8DA00XXXXXX","client_cert_url":"https://shiro-iot-files.s3.us-west-2.amazonaws.com/iot_cert_files/client/kivo_meshrouter/E8DA00XXXXXX/XXXXXXXXXX-certificate.pem.crt?X-Amz-Expires=1200&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWXLLR6ER7C4LBK7F/20240221/us-west-2/s3/aws4_request&X-Amz-Date=20240221T062057Z&X-Amz-SignedHeaders=host&X-Amz-Signature=7a68880fde066a265aab01896bee9e00xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","client_private_key_url":"https://shiro-iot-files.s3.us-west-2.amazonaws.com/iot_cert_files/client/kivo_meshrouter/E8DA00XXXXXX/XXXXXXXXXX-private.pem.key?X-Amz-Expires=1200&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAxxxxxxxxxxxxxxxx/20240221/us-west-2/s3/aws4_request&X-Amz-Date=20240221T062057Z&X-Amz-SignedHeaders=host&X-Amz-Signature=34a9ee9f1644fadec08f2145335f607cxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","root_cert_url":"https://shiro-iot-files.s3.us-west-2.amazonaws.com/iot_cert_files/server/VeriSign-Class3-Public-Primary-Certification-Authority-G5.pem?X-Amz-Expires=1200&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAxxxxxxxxxxxxxxxx/20240221/us-west-2/s3/aws4_request&X-Amz-Date=20240221T062057Z&X-Amz-SignedHeaders=host&X-Amz-Signature=828c860be97fe21935a8f96f9afbe219xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","server_host":"a368k6zybw30wc.iot.us-west-2.amazonaws.com","server_port":"8883"}} 
+[username]:[]
+[password]:[]
+[ClientID]:[E8DA00XXXXXX]
+[keepAlive]:[300] 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1220  100  1220    0     0   2234      0 --:--:-- --:--:-- --:--:--  2230
+[ready to download client cert] URL:https://shiro-iot-files.s3.us-west-2.amazonaws.com/iot_cert_files/client/kivo_meshrouter/E8DA00XXXXXX/XXXXXXXXXX-certificate.pem.crt?X-Amz-Expires=1200&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAxxxxxxxxxxxxxxxx/20240221/us-west-2/s3/aws4_request&X-Amz-Date=20240221T062057Z&X-Amz-SignedHeaders=host&X-Amz-Signature=7a68880fde066a265aab01896bee9e00xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx[downLoad]dbg: curl_easy_getinfo() HTTP_flag:200
+download client cert url success
+Waiting tty lock 6s...
+[ready to download client private key] URL:https://shiro-iot-files.s3.us-west-2.amazonaws.com/iot_cert_files/client/kivo_meshrouter/E8DA00XXXXXX/XXXXXXXXXX-private.pem.key?X-Amz-Expires=1200&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAxxxxxxxxxxxxxxxx/20240221/us-west-2/s3/aws4_request&X-Amz-Date=20240221T062057Z&X-Amz-SignedHeaders=host&X-Amz-Signature=34a9ee9f1644fadec08f2145335f607cxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx[downLoad]dbg: curl_easy_getinfo() HTTP_flag:200
+download client private key success
+[ready to download root cert] URL:https://shiro-iot-files.s3.us-west-2.amazonaws.com/iot_cert_files/server/VeriSign-Class3-Public-Primary-Certification-Authority-G5.pem?X-Amz-Expires=1200&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAxxxxxxxxxxxxxxxx/20240221/us-west-2/s3/aws4_request&X-Amz-Date=20240221T062057Z&X-Amz-SignedHeaders=host&X-Amz-Signature=828c860be97fe21935a8f96f9afbe219xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx[downLoad]dbg: curl_easy_getinfo() HTTP_flag:200
+download root cert success
+server host=a368k6zybw30wc.iot.us-west-2.amazonaws.com
+server port=8883
+<<--<<--<<--<<--<< cert get ok <<--<<--<<--<<--<<
+iot socket connect successfull
+iot_start_msg_send  !
+set device(url:/device/v1/property_list/set)
+recv MSG(ret=0):{"response_id":"61faf2323cad4b01xxxxxxxxxxxxxxxx","ts":1708496459247,"code":"1","msg":"success","data":{"property_change_list":[{"pid":"P2172","change_state":0},{"pid":"P2176","change_state":0},{"pid":"P2181","change_state":1}]}}
+MQTT server:a368k6zybw30wc.iot.us-west-2.amazonaws.com  port=8883
+Waiting tty lock 5s...
+(set_staBssTransCap)line=1005, set normal extended capabilities IE 
+[set_staBssTransCap 1021]STA[183eefc43faf] Support 11v = 1
+rtk_wlan_event_indicate:11720, report wifi link status failed, pid=0,sk=87e67a00
+route: SIOCADDRT: File exists
+
+Point report url:/rbi/v1/device/point/report 
+send MSG:{"mac":"E8DA00XXXXXX","product_model":"KIVO_MeshRouter","product_type":"Router","hardware_ver":"1.1.1.3237","firmware_ver":"5.16.0.209","ts":"1708496461537","type":4,"remark":{"subject":"DEBUG_MSG","comments":"NO_BOUND"}}
+Waiting tty lock 4s...
+Waiting tty lock 3s...
+Waiting tty lock 2s...
+GET show Messagee  {"state":{"desired":{"health_check":{"check_type":"3"}},"reported":{"health_check":{"check_type":"3"}}},"metadata":{"desired":{"health_check":{"check_type":{"timestamp":1708492196}}},"reported":{"health_check":{"check_type":{"timestamp":1708481353}}}},"version":8,"timestamp":1708496461} 
+
+iotShadowMsg {"state":{"reported":{"health_check":{"check_type":"3"}}}} 
+IOT_MQTT_MSG_SHADOW_GET_ACCEPTED end
+report_msg_publish topic=$aws/things/E8DA00XXXXXX/shadow/update 
+publish succes(msg:{"state":{"reported":{"health_check":{"check_type":"3"}}}})
+Waiting tty lock 1s...

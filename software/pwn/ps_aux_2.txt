@@ -1,0 +1,56 @@
+  PID USER       VSZ STAT COMMAND
+    1 root      1408 S    init      
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW<  [ksoftirqd/0]
+    4 root         0 SW   [kworker/0:0]
+    5 root         0 SW<  [kworker/0:0H]
+    6 root         0 SW   [kworker/u2:0]
+    7 root         0 SW<  [khelper]
+    8 root         0 SW   [kworker/u2:1]
+   86 root         0 SW<  [writeback]
+   89 root         0 SW<  [bioset]
+   90 root         0 SW<  [crypto]
+   92 root         0 SW<  [kblockd]
+   95 root         0 SW   [spi0]
+  112 root         0 SW   [kworker/0:1]
+  117 root         0 SW   [kswapd0]
+  727 root         0 SW   [mtdblock0]
+  732 root         0 SW   [mtdblock1]
+  737 root         0 SW   [mtdblock2]
+  742 root         0 SW   [mtdblock3]
+  747 root         0 SW   [mtdblock4]
+  752 root         0 SW   [mtdblock5]
+  844 root         0 SW<  [deferwq]
+  857 root         0 SWN  [jffs2_gcd_mtd4]
+ 1068 root      1008 S    udhcpd /var/udhcpd.conf 
+ 1076 root       976 S    iapp br0 wlan0 wlan1 
+ 1080 root       992 S    pathsel -i wlan-msh -P -d 
+ 1090 root      1344 S    wscd -start -c /var/wsc-wlan0-wlan1.conf -w wlan0 -w2
+ 1093 root      1008 S    iwcontrol wlan0 wlan1 
+ 1255 root      1408 S    /bin/sh /hualai/b 
+ 1263 root      1088 S    lld2d br0 
+ 1264 root       976 S    reload -k /var/wlsch.conf 
+ 1280 root       256 S    fwd 
+ 1299 root      8080 S    WTP /etc/capwap 
+ 1310 root      7472 S    nms 
+ 1312 root      5008 S    timelycheck 
+ 1314 root         0 SW<  [kworker/0:1H]
+ 1323 root       976 S <  watchdog 1000 
+ 1347 root      1440 S    /bin/sh /bin/wan_check.sh 
+ 1366 root      8048 S    ./hlRouterApp 
+ 1374 root     28352 S    ./iperf3 
+ 1375 root      6848 S    ./hl_client 
+ 1401 root      8176 S    chdeviceservice /web 
+ 1446 root      1008 S    udhcpc -i eth1 -p /etc/udhcpc/udhcpc-eth1.pid -s /usr
+ 1459 root      1408 S    dnrd --cache=off -s 192.168.8.1 
+ 4207 root      1056 S    ntp_inet -x clock.fmt.he.net 
+ 4221 root      1008 S    /bin/igmpproxy eth1 br0 -D 
+ 4238 root      7456 S    AC /etc/capwap 
+ 4241 root      1408 S    ash 
+ 4245 root       816 S    /tmp/s 
+ 4248 root      1488 S    ledctrl 
+ 4258 root      1408 S    /bin/sh -c /bin/ash 
+ 4259 root      1408 S    /bin/ash 
+ 4678 root      1408 S    -/bin/login 
+ 4807 root      1392 S    sleep 12 
+ 4816 root      1408 R    ps aux 

@@ -1,0 +1,176 @@
+#!/bin/sh
+
+ifconfig lo 127.0.0.1
+
+CINIT=1
+
+hostname rlx-linux
+
+mount -t proc proc /proc
+mount -t ramfs ramfs /var
+if [ -d "/hw_setting" ];then
+    mount -t yaffs2 -o tags-ecc-off -o inband-tags /dev/mtdblock1 /hw_setting
+fi
+# mount plugin section
+PLUGIN_MTD_IDX=`cat /proc/mtd | grep plugin | cut -d: -f 1 | cut -b 4-`
+mount -t jffs2 /dev/mtdblock$PLUGIN_MTD_IDX /hualai
+
+mkdir /var/miio
+mkdir /var/miio_client
+mkdir /var/tmp
+mkdir /var/web
+mkdir /var/log
+mkdir /var/run
+mkdir /var/lock
+mkdir /var/system
+mkdir /var/dnrd
+mkdir /var/avahi
+mkdir /var/dbus-1
+mkdir /var/run/dbus
+mkdir /var/lib
+mkdir /var/lib/misc
+mkdir /var/home
+mkdir /var/root
+mkdir /var/tmp/net
+###for tr069
+mkdir /var/cwmp_default
+mkdir /var/cwmp_config
+mkdir -p /var/spool/cron/crontabs
+echo "" > /var/spool/cron/crontabs/root
+
+if [ ! -f /var/cwmp_default/DefaultCwmpNotify.txt ]; then
+	cp -p /etc/DefaultCwmpNotify.txt /var/cwmp_default/DefaultCwmpNotify.txt 2>/dev/null
+fi
+
+##For miniigd
+mkdir /var/linuxigd
+cp /etc/tmp/pics* /var/linuxigd 2>/dev/null
+
+##For pptp
+mkdir /var/ppp
+mkdir /var/ppp/peers
+
+#smbd
+mkdir /var/config
+mkdir /var/private
+mkdir /var/tmp/usb
+mkdir /var/tmp/mmc
+
+#snmpd
+mkdir /var/net-snmp
+
+cp /bin/pppoe.sh /var/ppp/true
+echo "#!/bin/sh" > /var/ppp/true
+#echo "PASS"     >> /var/ppp/true
+
+#for console login
+cp /etc/shadow.sample /var/shadow
+
+#for weave
+cp /etc/avahi-daemon.conf /var/avahi
+
+#extact web pages
+cd /web
+#flash extr /web
+cd /
+ 
+mkdir -p /var/udhcpc
+mkdir -p /var/udhcpd
+cp /bin/init.sh /var/udhcpc/eth0.deconfig
+echo " " > /var/udhcpc/eth0.deconfig
+cp /bin/init.sh /var/udhcpc/eth1.deconfig
+echo " " > /var/udhcpc/eth1.deconfig
+cp /bin/init.sh /var/udhcpc/br0.deconfig
+echo " " > /var/udhcpc/br0.deconfig
+cp /bin/init.sh /var/udhcpc/wlan0.deconfig
+echo " " > /var/udhcpc/wlan0.deconfig
+cp /bin/init.sh /var/udhcpc/eth2.100.deconfig
+echo " " > /var/udhcpc/eth2.100.deconfig
+cp /bin/init.sh /var/udhcpc/eth4.100.deconfig
+echo " " > /var/udhcpc/eth4.100.deconfig
+
+if [ "$CINIT" = 1 ]; then
+startup.sh
+fi
+
+# for wapi certs related
+mkdir /var/myca
+# wapi cert(must done before init.sh)
+cp -rf /usr/local/ssl/* /var/myca/ 2>/dev/null
+# loadWapiFiles >/dev/null 2>&1
+ 
+# for wireless client mode 802.1x
+mkdir /var/1x
+cp -rf /usr/1x/* /var/1x/ 2>/dev/null
+mkdir /var/openvpn
+cp -rf /usr/share/openvpn/* /var/openvpn 2>/dev/null
+
+#WIZARD_GUID=`flash get WIZARD_GUID | cut -f2 -d'='`
+#if [ "$WIZARD_GUID" != "1" ]; then
+#	echo 1 > /proc/rtl_dnstrap/trap_all
+#fi
+
+# Start system script
+init.sh gw all
+ 
+# modify dst-cache setting
+echo "24576" > /proc/sys/net/ipv4/route/max_size
+echo "180" > /proc/sys/net/ipv4/route/gc_thresh
+echo 20 > /proc/sys/net/ipv4/route/gc_elasticity
+# echo 35 > /proc/sys/net/ipv4/route/gc_interval
+# echo 60 > /proc/sys/net/ipv4/route/secret_interval
+# echo 10 > /proc/sys/net/ipv4/route/gc_timeout
+ 
+# echo "4096" > /proc/sys/net/nf_conntrack_max
+echo "12288" > /proc/sys/net/netfilter/nf_conntrack_max
+echo "600" > /proc/sys/net/ipv4/netfilter/ip_conntrack_tcp_timeout_established
+echo "20" > /proc/sys/net/ipv4/netfilter/ip_conntrack_tcp_timeout_time_wait
+echo "20" > /proc/sys/net/ipv4/netfilter/ip_conntrack_tcp_timeout_close
+echo "90" > /proc/sys/net/ipv4/netfilter/ip_conntrack_udp_timeout
+echo "120" > /proc/sys/net/ipv4/netfilter/ip_conntrack_udp_timeout_stream
+echo "90" > /proc/sys/net/ipv4/netfilter/ip_conntrack_generic_timeout
+# echo "1048576" > /proc/sys/net/ipv4/rt_cache_rebuild_count
+echo "32" > /proc/sys/net/netfilter/nf_conntrack_expect_max
+
+# modify IRQ Affinity setting
+echo "3" > /proc/irq/33/smp_affinity
+
+#echo 1 > /proc/sys/net/ipv4/ip_forward #don't enable ip_forward before set MASQUERADE
+#echo 2048 > /proc/sys/net/core/hot_list_length
+
+# red led init
+echo 23 > /sys/class/gpio/export
+echo "out" > /sys/class/gpio/gpio23/direction
+echo 1 > /sys/class/gpio/gpio23/value
+
+# green led init
+echo 24 > /sys/class/gpio/export
+echo "out" > /sys/class/gpio/gpio24/direction
+echo 1 > /sys/class/gpio/gpio24/value
+
+# blue led init
+echo 27 > /sys/class/gpio/export
+echo "out" > /sys/class/gpio/gpio27/direction
+echo 1 > /sys/class/gpio/gpio27/value
+
+DEVICE_MODE=`flash get DEVICE_MODE | cut -f2 -d'='`
+if [ "$DEVICE_MODE" != "1" ]; then
+	sleep 1
+	echo 0 > /sys/class/gpio/gpio23/value
+	echo 1 > /sys/class/gpio/gpio24/value
+	echo 1 > /sys/class/gpio/gpio27/value
+	flash cs_backup
+	hlCheckApp &
+	wan_check.sh &
+fi
+
+post_startup.sh
+
+ew 0xb800085c 0x600000
+echo 8367write 0x1303 0x0 > /proc/rtl865x/phyReg
+
+echo 8367write 0x13C3 0x0000 > /proc/rtl865x/phyReg
+
+#echo 16 > /proc/sys/net/ipv4/neigh/default/gc_thresh1
+
+tty_test&
