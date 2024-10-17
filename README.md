@@ -1,4 +1,6 @@
 # Vilo 0day Research
+Watch our DEFCON talk [here](https://www.youtube.com/watch?v=IyInMgXj4k4&t=1167s)!
+
 ## Background
 [Vilo Living](https://store.viloliving.com/) is a startup founded in 2021 that creates cheap mesh network WiFi routers for consumer and ISP use. Currently, they only have 2 devices on the market: a regular mesh system, and a mesh system that supports WiFi 6. After initial research, we haven't found a single mention of any CVEs or vulnerabilities found in any Vilo routers. Looking through their website, we weren't super impressed with how they made their security sound. However, we discovered that they have a [Bug Bounty Program](https://support.viloliving.com/hc/en-us/articles/7150613338519-Vilo-Bug-Bounty-Program-Terms-and-Conditions-), but it requires you be enrolled in their Beta Testing program protected by an NDA, and only swag "prizes" were given out. 
 
